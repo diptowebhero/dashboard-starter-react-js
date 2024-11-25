@@ -166,7 +166,7 @@
 
   /* Sidebar menu header */
   .sidebar-menu-header {
-    @apply pb-2 pl-7 pt-4 my-2 text-xs uppercase tracking-widest font-bold text-slate-400;
+    @apply pb-2 pl-7 pt-4 my-2 text-xs uppercase tracking-widest font-bold text-slate-400 block;
   }
 
   /* Sidebar toggle */
@@ -184,11 +184,11 @@
   }
 
   .sidebar.collapsed .sidebar-menu-header {
-    @apply hidden;
+    @apply md:hidden;
   }
 
   .sidebar.collapsed:hover .sidebar-menu-header {
-    @apply block;
+    @apply md:block;
   }
   /* Sidebar style end*/
 

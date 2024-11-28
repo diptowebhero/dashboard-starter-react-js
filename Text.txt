@@ -1,0 +1,10 @@
+Dashboard feedback:
+1. Sidebar item padding is not good 
+2. The edges of the components should be more rounded
+3. No profile in the navbar
+4. People could hide the navbar if they want
+5. Theme button icon spacing is not good 
+6. The hover animation of the sidebar should be improved
+
+
+https://modernize-react-dark.netlify.app/dashboards/modern

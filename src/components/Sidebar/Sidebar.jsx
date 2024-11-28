@@ -1,8 +1,8 @@
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { logo } from "../../assets";
 import { menuItems } from "../../menus";
+import SidebarHeader from "./SidebarHeader";
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   const { pathname } = useLocation();
@@ -38,36 +38,22 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   };
 
   const isRouteActive = (route) => pathname === route;
-
   return (
     <aside
       ref={sidebarRef}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={`sidebar ${isHovered ? "hovered" : ""} ${
+      className={`sidebar   ${isHovered ? "hovered" : ""} ${
         sidebarOpen ? "collapsed expanded expandedSidebar" : ""
       }`}>
-      <a href='/'>
-        <div className='sidebar-header'>
-          <div className='sidebar-logo-icon'>
-            <img src={logo} className='h-[47px] object-cover' alt='LOGO' />
-          </div>
-          <div className='flex flex-col logo-text px-2'>
-            <h1 className='text-xl font-semibold'>
-              <span className='text-primary-light dark:text-primary-lighter'>
-                Dashboard
-              </span>
-            </h1>
-            <span className='whitespace-nowrap capitalize text-xs text-slate-400'>
-              simple & customizable
-            </span>
-          </div>
-        </div>
-      </a>
+      <SidebarHeader
+        sidebarOpen={sidebarOpen}
+        setSidebarOpen={setSidebarOpen}
+      />
 
-      <ul className='sidebar-content'>
+      <ul className='sidebar-content overflow-x-hidden'>
         {menuItems.map((category) => (
-          <li key={category.category} className='my-3'>
+          <li key={category.category} className='my-2'>
             <span className='sidebar-menu-header'>{category.category}</span>
             <ul>
               {category.items.map((item, i) => {

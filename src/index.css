@@ -26,7 +26,7 @@
 
   /* Sidebar base styles */
   .sidebar {
-    @apply fixed bottom-0 top-0 z-[60] h-screen w-72 -translate-x-full overflow-hidden bg-white shadow-lg transition-all duration-500 ease-in-out dark:bg-dark lg:translate-x-0;
+    @apply fixed bottom-0 top-0 z-50 h-screen w-72 -translate-x-full overflow-hidden bg-white shadow-lg transition-all duration-500 ease-in-out dark:bg-dark lg:translate-x-0;
   }
 
   .sidebar.collapsed {
@@ -77,7 +77,7 @@
 
   /* Sidebar menu */
   .sidebar-menu {
-    @apply flex w-full items-center gap-2 rounded p-1 text-sm transition-colors duration-150 hover:bg-primary hover:text-primary-light dark:hover:bg-primary/[0.08];
+    @apply flex w-full items-center gap-2 rounded-md p-1 text-sm transition-colors duration-150 hover:bg-primary hover:text-primary-light dark:hover:bg-primary/[0.08];
   }
 
   .sidebar-menu-icon {
@@ -166,7 +166,7 @@
 
   /* Sidebar menu header */
   .sidebar-menu-header {
-    @apply pb-2 pl-7 pt-4 my-2 text-xs uppercase tracking-widest font-bold text-slate-400 block;
+    @apply pl-7 pt-4 my-2 text-xs uppercase leading-[10px] tracking-widest font-bold text-slate-400 block;
   }
 
   /* Sidebar toggle */
@@ -189,6 +189,12 @@
 
   .sidebar.collapsed:hover .sidebar-menu-header {
     @apply md:block;
+  }
+  .sidebar.hovered .wrapper {
+    @apply lg:ml-72;
+  }
+  .sidebar.hovered + .wrapper {
+    @apply lg:ml-72;
   }
   /* Sidebar style end*/
 

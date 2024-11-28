@@ -24,7 +24,7 @@ const SidebarHeader = ({ sidebarOpen, setSidebarOpen }) => {
             e.stopPropagation();
             setSidebarOpen(!sidebarOpen);
           }}
-          className='hidden lg:flex sidebar-toggle absolute bg-primary-light text-gray-50 size-6  items-center justify-center rounded-full p-1 right-0 z-[70] dark:text-white'>
+          className='hidden lg:flex sidebar-toggle absolute bg-primary-light text-gray-50 size-6  items-center justify-center rounded-full p-1 -right-2 z-[70] dark:text-white'>
           {sidebarOpen ? (
             <ChevronsRight className='size-5' />
           ) : (

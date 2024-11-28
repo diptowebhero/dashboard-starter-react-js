@@ -47,7 +47,7 @@ const Profile = () => {
       {/* Dropdown Content */}
       <div
         ref={dropdownRef}
-        className={`border absolute right-0 border-gray-100 bg-white shadow-lg rounded-md mt-3 w-56 divide-y dark:divide-slate-600 dark:border-slate-600 dark:bg-primary dark:text-slate-200 transition-all duration-300 ease-in-out ${
+        className={`border absolute right-0 border-gray-100 bg-white shadow-lg rounded-md mt-3 w-56 divide-y dark:divide-slate-600 dark:border-slate-600 dark:bg-darkGray dark:text-slate-200 transition-all duration-300 ease-in-out z-50 ${
           dropdownVisible ? "opacity-100 visible" : "opacity-0 invisible"
         }`}>
         <div className='px-4 py-3'>

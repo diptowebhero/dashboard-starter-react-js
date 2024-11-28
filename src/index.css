@@ -26,7 +26,7 @@
 
   /* Sidebar base styles */
   .sidebar {
-    @apply fixed bottom-0 top-0 z-[60] h-screen w-72 -translate-x-full overflow-hidden bg-white shadow-lg transition-all duration-700 ease-in-out dark:bg-dark lg:translate-x-0 opacity-100;
+    @apply fixed bottom-0 top-0 z-[60] h-screen w-72 -translate-x-full  bg-white shadow-lg transition-all duration-700 ease-in-out dark:bg-dark lg:translate-x-0 opacity-100;
   }
 
   .sidebar.collapsed {
@@ -129,7 +129,7 @@
     @apply lg:opacity-0 lg:invisible;
   }
   .sidebar.collapsed .logo-text {
-    @apply lg:opacity-0 lg:invisible;
+    @apply lg:opacity-0 lg:invisible transition-all duration-500;
   }
   .sidebar.collapsed:hover .logo-text {
     @apply opacity-100 visible;
@@ -223,7 +223,7 @@
   background: transparent;
 }
 .sidebar-content::-webkit-scrollbar-thumb {
-  background: #c7c6cb;
+  background: linear-gradient(transparent, #00a76f44);
   border-radius: 10px;
 }
 .sidebar-content::-webkit-scrollbar-thumb:hover {

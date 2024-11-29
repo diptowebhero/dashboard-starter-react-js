@@ -2,9 +2,11 @@
 import {
   CommandIcon,
   Component,
+  Landmark,
   LayoutDashboardIcon,
   LayoutTemplate,
   ListOrdered,
+  Table,
 } from "lucide-react";
 
 export const menuItems = [
@@ -102,6 +104,36 @@ export const menuItems = [
   {
     category: "UI",
     items: [
+      {
+        name: "Base UI",
+        icon: Landmark,
+        submenu: [
+          { name: "Accordion", route: "/accordion" },
+          { name: "Dropdown", route: "/dropdown" },
+          { name: "Badge", route: "/badge" },
+          { name: "Input", route: "/inputs" },
+          { name: "Input Group", route: "/input-group" },
+          { name: "Text Area", route: "/text-area" },
+          { name: "Select", route: "/Select" },
+          { name: "Checkbox", route: "/checkbox" },
+          { name: "Breadcrumb", route: "/breadcrumb" },
+          { name: "Alert", route: "/alert" },
+          { name: "Buttons", route: "/buttons" },
+          { name: "Cards", route: "/cards" },
+          { name: "Modal", route: "/modal" },
+          { name: "Range Slider", route: "/range-slider" },
+          { name: "Layout", route: "/layout" },
+          { name: "Validation", route: "/validation" },
+        ],
+      },
+      {
+        name: "Tables",
+        icon: Table,
+        submenu: [
+          { name: "Basic Table", route: "/basic-table" },
+          { name: "Data Table", route: "/data-table" },
+        ],
+      },
       {
         name: "Authentication",
         icon: CommandIcon,

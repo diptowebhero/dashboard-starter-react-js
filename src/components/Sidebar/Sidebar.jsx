@@ -29,7 +29,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   }, [setSidebarOpen]);
 
   const toggleSubmenu = (menuName) => {
-    console.log("click");
     setActiveMenu((prevMenu) => (prevMenu === menuName ? null : menuName));
   };
 

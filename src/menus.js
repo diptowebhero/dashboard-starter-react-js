@@ -109,9 +109,9 @@ export const menuItems = [
         icon: Landmark,
         submenu: [
           { name: "Accordion", route: "/accordion" },
+          { name: "Input", route: "/inputs" },
           { name: "Dropdown", route: "/dropdown" },
           { name: "Badge", route: "/badge" },
-          { name: "Input", route: "/inputs" },
           { name: "Input Group", route: "/input-group" },
           { name: "Text Area", route: "/text-area" },
           { name: "Select", route: "/Select" },

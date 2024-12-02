@@ -17,4 +17,10 @@ export const accordionItems = [
     content:
       "State in React is an object that stores a component's dynamic data and determines how that component renders and behaves. State can change over time, and when it does, React re-renders the component.",
   },
+  {
+    id: 4,
+    title: "What is a useEffect in React?",
+    content:
+      "State in React is an object that stores a component's dynamic data and determines how that component renders and behaves. State can change over time, and when it does, React re-renders the component.",
+  },
 ];

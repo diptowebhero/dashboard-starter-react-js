@@ -1,22 +1,17 @@
 import CommonHeader from "../../common/CommonHeader";
-import DefaultOpenAccordion from "./DefaultOpenAccordion";
-import GridLayout from "./GridLayout";
-import SingleAccordion from "./SingleAccordion";
 
-const Accordion = () => {
+const Inputs = () => {
   return (
     <div>
       <CommonHeader
-        title='Accordion'
+        title='Inputs'
         description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt quis aliquam aliquid est ipsam minus dolor ea. Qui omnis quasi iste alias modi facilis ratione placeat, non corporis? Optio.'
       />
       <div className='space-y-4'>
-        <SingleAccordion />
-        <DefaultOpenAccordion />
-        <GridLayout />
+        <h2>Inputs here</h2>
       </div>
     </div>
   );
 };
 
-export default Accordion;
+export default Inputs;

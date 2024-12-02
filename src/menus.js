@@ -109,7 +109,7 @@ export const menuItems = [
         icon: Landmark,
         submenu: [
           { name: "Accordion", route: "/accordion" },
-          { name: "Input", route: "/inputs" },
+          { name: "Inputs", route: "/inputs" },
           { name: "Dropdown", route: "/dropdown" },
           { name: "Badge", route: "/badge" },
           { name: "Input Group", route: "/input-group" },

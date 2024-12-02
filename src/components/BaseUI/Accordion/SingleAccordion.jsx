@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { accordionItems } from "./accordionItems";
+import Title from "./Title";
 
 const SingleAccordion = () => {
   const [activeItem, setActiveItem] = useState(null);
@@ -11,11 +12,7 @@ const SingleAccordion = () => {
   };
   return (
     <>
-      <div className='my-2'>
-        <h2 className='font-semibold text-xl text-gray-900 dark:text-white'>
-          Single Accordion
-        </h2>
-      </div>
+      <Title title='Single Accordion' />
       <div className='relative mt-1 w-full border-[1px] rounded-lg p-6 border-gray-300 dark:border-[#1e293b]'>
         <div className='flex gap-2 flex-col md:w-3/4 mx-auto'>
           {accordionItems.map((item) => (

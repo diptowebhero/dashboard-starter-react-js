@@ -1,5 +1,6 @@
 import CommonHeader from "../../common/CommonHeader";
 import BasicInput from "./BasicInput";
+import InputSizes from "./InputSizes";
 import InputWithHelperText from "./InputWithHelperText";
 import InputWithLabel from "./InputWithLabel";
 import PasswordInput from "./PasswordInput";
@@ -16,6 +17,7 @@ const Inputs = () => {
         <BasicInput />
         <InputWithLabel />
         <InputWithHelperText />
+        <InputSizes />
         <ValidateInput />
         <PasswordInput />
       </div>

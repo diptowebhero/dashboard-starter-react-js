@@ -110,10 +110,10 @@ export const menuItems = [
         submenu: [
           { name: "Accordion", route: "/accordion" },
           { name: "Inputs", route: "/inputs" },
+          { name: "TextArea", route: "/text-area" },
           { name: "Dropdown", route: "/dropdown" },
           { name: "Badge", route: "/badge" },
           { name: "Input Group", route: "/input-group" },
-          { name: "Text Area", route: "/text-area" },
           { name: "Select", route: "/Select" },
           { name: "Checkbox", route: "/checkbox" },
           { name: "Breadcrumb", route: "/breadcrumb" },

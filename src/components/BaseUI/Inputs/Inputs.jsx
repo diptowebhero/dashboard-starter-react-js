@@ -2,6 +2,7 @@ import CommonHeader from "../../common/CommonHeader";
 import BasicInput from "./BasicInput";
 import InputWithHelperText from "./InputWithHelperText";
 import InputWithLabel from "./InputWithLabel";
+import PasswordInput from "./PasswordInput";
 import ValidateInput from "./ValidateInput";
 
 const Inputs = () => {
@@ -16,6 +17,7 @@ const Inputs = () => {
         <InputWithLabel />
         <InputWithHelperText />
         <ValidateInput />
+        <PasswordInput />
       </div>
     </div>
   );

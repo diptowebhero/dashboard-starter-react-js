@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
+import Box from "../Box";
+import Title from "../Title";
 import { accordionItems } from "./accordionItems";
-import Title from "./Title";
 
 const GridLayout = () => {
-  const [activeItem, setActiveItem] = useState(1);
+  const [activeItem, setActiveItem] = useState(null);
 
   // Function to handle the toggle of each item
   const toggleItem = (id) => {
@@ -14,9 +15,9 @@ const GridLayout = () => {
 
   return (
     <>
-      <Title title='Grid' />
-      <div className='relative mt-1 w-full border-[1px] rounded-lg p-6 border-gray-300 dark:border-[#1e293b]'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:w-4/5 mx-auto'>
+      <Box>
+        <Title title='Grid' />
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
           {accordionItems.map((item) => (
             <motion.div
               key={item.id}
@@ -50,7 +51,7 @@ const GridLayout = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </Box>
     </>
   );
 };

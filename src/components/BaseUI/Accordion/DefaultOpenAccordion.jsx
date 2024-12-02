@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Minus, Plus } from "lucide-react";
 import { useState } from "react";
+import Box from "../Box";
+import Title from "../Title";
 import { accordionItems } from "./accordionItems";
-import Title from "./Title";
 
 const DefaultOpenAccordion = () => {
   const [activeItem, setActiveItem] = useState(1);
@@ -13,10 +14,9 @@ const DefaultOpenAccordion = () => {
   };
   return (
     <>
-      <Title title='Default Open One' />
-
-      <div className='relative mt-1 w-full border-[1px] rounded-lg p-6 border-gray-300 dark:border-[#1e293b]'>
-        <div className='flex gap-2 flex-col md:w-3/4 mx-auto'>
+      <Box>
+        <Title title='Default Open One' />
+        <div className='flex gap-2 flex-col mx-auto'>
           {accordionItems.map((item) => (
             <div
               key={item.id}
@@ -54,7 +54,7 @@ const DefaultOpenAccordion = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Box>
     </>
   );
 };

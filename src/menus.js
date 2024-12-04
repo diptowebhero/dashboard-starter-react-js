@@ -25,7 +25,7 @@ export const menuItems = [
     ],
   },
   {
-    category: "Pages",
+    category: "Inventory",
     items: [
       {
         name: "Products",
@@ -78,25 +78,22 @@ export const menuItems = [
     ],
   },
   {
-    category: "Components",
+    category: "Pages",
     items: [
       {
-        name: "Forms",
-        icon: Component,
+        name: "Authentication",
+        icon: CommandIcon,
         submenu: [
-          { name: "Input", route: "/input" },
-          { name: "TextArea", route: "/textarea" },
-          { name: "Checkbox", route: "/checkbox" },
-          { name: "Radio", route: "/radio" },
+          { name: "Sign In", route: "/signIn" },
+          { name: "Signup", route: "/signup" },
         ],
       },
       {
-        name: "Commons",
+        name: "Error Pages",
         icon: CommandIcon,
         submenu: [
-          { name: "Button", route: "/button" },
-          { name: "Modal", route: "/modal" },
-          { name: "Card", route: "/cards" },
+          { name: "404 error", route: "/404-error" },
+          { name: "505 error", route: "/505-error" },
         ],
       },
     ],
@@ -111,10 +108,10 @@ export const menuItems = [
           { name: "Accordion", route: "/accordion" },
           { name: "Inputs", route: "/inputs" },
           { name: "TextArea", route: "/text-area" },
+          { name: "Select", route: "/select" },
           { name: "Dropdown", route: "/dropdown" },
           { name: "Badge", route: "/badge" },
           { name: "Input Group", route: "/input-group" },
-          { name: "Select", route: "/Select" },
           { name: "Checkbox", route: "/checkbox" },
           { name: "Breadcrumb", route: "/breadcrumb" },
           { name: "Alert", route: "/alert" },
@@ -132,14 +129,6 @@ export const menuItems = [
         submenu: [
           { name: "Basic Table", route: "/basic-table" },
           { name: "Data Table", route: "/data-table" },
-        ],
-      },
-      {
-        name: "Authentication",
-        icon: CommandIcon,
-        submenu: [
-          { name: "Sign In", route: "/signIn" },
-          { name: "Signup", route: "/signup" },
         ],
       },
     ],

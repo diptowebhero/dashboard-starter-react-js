@@ -16,8 +16,8 @@ const GridLayout = () => {
   return (
     <>
       <Box>
-        <Title title='Grid' />
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+        <Title title="Grid" />
+        <div className="grid grid-cols-1 gap-x-2 gap-y-1 md:grid-cols-2">
           {accordionItems.map((item) => (
             <motion.div
               key={item.id}
@@ -28,23 +28,25 @@ const GridLayout = () => {
               }}
               exit={{ opacity: 0, maxHeight: 0 }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
-              className='rounded-lg overflow-hidden mb-2 border-2 dark:border-primary/90 border-[#F2F2F2] dark:bg-[#E0ECFB]'>
+              className="mb-2 overflow-hidden rounded-lg border-2 border-[#F2F2F2] dark:border-primary/90 dark:bg-[#E0ECFB]"
+            >
               <div
-                className={`p-4 cursor-pointer transition-all font-semibold dark:text-white text-black dark:hover:bg-primary/100 hover:bg-[#F2F2F2] dark:hover:text-white hover:text-black flex justify-between items-center dark:bg-[#11112b] bg-white 2xl:text-base text-sm ${
+                className={`flex cursor-pointer items-center justify-between bg-white p-4 text-sm font-semibold text-black transition-all hover:bg-[#F2F2F2] hover:text-black dark:bg-[#11112b] dark:text-white dark:hover:bg-primary/100 dark:hover:text-white 2xl:text-base ${
                   activeItem === item.id
-                    ? "dark:bg-primary/100 dark:text-white hover:text-black"
+                    ? "hover:text-black dark:bg-primary/100 dark:text-white"
                     : ""
                 }`}
-                onClick={() => toggleItem(item.id)}>
-                {item.title}
+                onClick={() => toggleItem(item.id)}
+              >
+                <h4 className="text-[15px] font-semibold">{item.title}</h4>
                 {activeItem === item.id ? (
-                  <ChevronUp className='transition-all duration-150' />
+                  <ChevronUp className="size-4 transition-all duration-150" />
                 ) : (
-                  <ChevronDown className='transition-all duration-150' />
+                  <ChevronDown className="size-4 transition-all duration-150" />
                 )}
               </div>
-              <div className='overflow-hidden'>
-                <article className='p-3 bg-transparent text-black'>
+              <div className="overflow-hidden">
+                <article className="bg-transparent p-3 text-black">
                   {item.content}
                 </article>
               </div>

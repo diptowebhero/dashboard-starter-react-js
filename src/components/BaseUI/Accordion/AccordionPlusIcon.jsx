@@ -5,7 +5,7 @@ import Box from "../Box";
 import Title from "../Title";
 import { accordionItems } from "./accordionItems";
 
-const DefaultOpenAccordion = () => {
+const AccordionPlusIcon = () => {
   const [activeItem, setActiveItem] = useState(1);
 
   // Function to handle the toggle of each item
@@ -15,24 +15,26 @@ const DefaultOpenAccordion = () => {
   return (
     <>
       <Box>
-        <Title title='Default Open One' />
-        <div className='flex gap-2 flex-col mx-auto'>
+        <Title title="Tabs Accordion With Plus Active BG" />
+        <div className="mx-auto flex flex-col gap-2">
           {accordionItems.map((item) => (
             <div
               key={item.id}
-              className={`rounded-lg overflow-hidden mb-2 border-2 dark:border-primary/90 border-[#F2F2F2] dark:bg-[#E0ECFB] `}>
+              className={`overflow-hidden rounded-lg border-2 border-[#F2F2F2] dark:border-primary/90 dark:bg-[#E0ECFB]`}
+            >
               <div
-                className={`p-4 cursor-pointer transition-all font-semibold dark:text-white text-black dark:hover:bg-primary/100 hover:bg-[#F2F2F2] dark:hover:text-white hover:text-black flex justify-between items-center dark:bg-[#11112b] bg-white 2xl:text-base text-sm ${
+                className={`flex cursor-pointer items-center justify-between bg-white p-3 text-sm font-semibold text-black transition-all hover:bg-[#F2F2F2] hover:text-black dark:bg-[#11112b] dark:text-white dark:hover:bg-primary/100 dark:hover:text-white 2xl:text-base ${
                   activeItem === item.id
-                    ? "dark:!bg-primary/100 dark:text-white dark:hover:text-white !bg-[#F2F2F2]"
+                    ? "!bg-[#F2F2F2] dark:!bg-primary/100 dark:text-white dark:hover:text-white"
                     : ""
                 } `}
-                onClick={() => toggleItem(item.id)}>
-                {item.title}
+                onClick={() => toggleItem(item.id)}
+              >
+                <h4 className="text-[15px]">{item.title}</h4>
                 {activeItem === item.id ? (
-                  <Minus className='lucide lucide-chevron-down transition-transform' />
+                  <Minus className="lucide lucide-chevron-down size-4 transition-transform" />
                 ) : (
-                  <Plus className='lucide lucide-chevron-down transition-transform' />
+                  <Plus className="lucide lucide-chevron-down size-4 transition-transform" />
                 )}
               </div>
               <motion.div
@@ -43,11 +45,12 @@ const DefaultOpenAccordion = () => {
                 }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{
-                  duration: 0.5,
+                  duration: 0.3,
                   ease: "easeInOut",
                 }}
-                className='overflow-hidden'>
-                <article className='p-3 bg-transparent text-black'>
+                className="overflow-hidden"
+              >
+                <article className="bg-transparent p-3 text-sm text-slate-600">
                   {item.content}
                 </article>
               </motion.div>
@@ -59,4 +62,4 @@ const DefaultOpenAccordion = () => {
   );
 };
 
-export default DefaultOpenAccordion;
+export default AccordionPlusIcon;

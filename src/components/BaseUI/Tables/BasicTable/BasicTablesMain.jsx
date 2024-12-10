@@ -3,6 +3,7 @@ import BasicTables from "./BasicTables";
 import BorderedTable from "./BorderedTable";
 import HoverableTableRows from "./HoverableTableRows";
 import StripedRowsTable from "./StripedRowstable";
+import TableWithFooter from "./TableWithFooter";
 
 const BasicTablesMain = () => {
   return (
@@ -17,6 +18,7 @@ const BasicTablesMain = () => {
         <StripedRowsTable />
         <HoverableTableRows />
         <BorderedTable />
+        <TableWithFooter />
         {/* </div> */}
       </div>
     </div>

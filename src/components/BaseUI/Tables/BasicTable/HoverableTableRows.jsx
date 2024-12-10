@@ -59,7 +59,7 @@ const HoverableTableRows = () => {
         <div className="min-w-max">
           <table className="w-full table-auto border-collapse rounded-md border border-slate-300 text-left shadow-md dark:border-slate-700">
             <thead>
-              <tr className="text-gray-700 dark:bg-slate-800 dark:text-gray-300">
+              <tr className="border-b border-slate-200 text-gray-700 dark:bg-slate-800 dark:text-gray-300">
                 <th className="px-4 py-2">ID</th>
                 <th className="px-4 py-2">Product Name</th>
                 <th className="px-4 py-2">Color</th>

@@ -8,7 +8,7 @@ const tableData = [
     category: "Laptop",
     available: "Yes",
     qty: 2,
-    price: "$1299",
+    price: "1299",
   },
   {
     id: "02",
@@ -17,7 +17,7 @@ const tableData = [
     category: "Monitor",
     available: "Yes",
     qty: 4,
-    price: "$799",
+    price: "799",
   },
   {
     id: "03",
@@ -26,7 +26,7 @@ const tableData = [
     category: "Accessories",
     available: "Yes",
     qty: 3,
-    price: "$99",
+    price: "99",
   },
   {
     id: "04",
@@ -35,7 +35,7 @@ const tableData = [
     category: "Tablet",
     available: "No",
     qty: 0,
-    price: "$999",
+    price: "999",
   },
   {
     id: "05",
@@ -44,14 +44,14 @@ const tableData = [
     category: "Headphones",
     available: "Yes",
     qty: 6,
-    price: "$349",
+    price: "349",
   },
 ];
 
-const BasicTables = () => {
+const TableWithFooter = () => {
   return (
     <Box>
-      <Title title="Basic Tables" />
+      <Title title="Table with footer" />
 
       {/* Basic Tables */}
       <div className="overflow-x-auto">
@@ -84,6 +84,14 @@ const BasicTables = () => {
                 </tr>
               ))}
             </tbody>
+            <tfoot>
+              <tr className="font-bold text-slate-700 dark:text-gray-300">
+                <td className="px-4 py-2 text-start" colSpan={6}>
+                  Total
+                </td>
+                <td className="px-4 py-2">$0</td>
+              </tr>
+            </tfoot>
           </table>
         </div>
       </div>
@@ -91,4 +99,4 @@ const BasicTables = () => {
   );
 };
 
-export default BasicTables;
+export default TableWithFooter;

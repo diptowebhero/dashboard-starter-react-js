@@ -12,12 +12,12 @@ const BasicTablesMain = () => {
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nesciunt quis aliquam aliquid est ipsam minus dolor ea. Qui omnis quasi iste alias modi facilis ratione placeat, non corporis? Optio."
       />
       <div className="space-y-4">
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          <BasicTables />
-          <StripedRowsTable />
-          <HoverableTableRows />
-          <BorderedTable />
-        </div>
+        {/* <div className="grid grid-cols-1 gap-3 md:grid-cols-2"> */}
+        <BasicTables />
+        <StripedRowsTable />
+        <HoverableTableRows />
+        <BorderedTable />
+        {/* </div> */}
       </div>
     </div>
   );

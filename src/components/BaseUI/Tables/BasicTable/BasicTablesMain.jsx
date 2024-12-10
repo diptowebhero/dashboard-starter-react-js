@@ -2,7 +2,8 @@ import CommonHeader from "../../../common/CommonHeader";
 import BasicTables from "./BasicTables";
 import BorderedTable from "./BorderedTable";
 import HoverableTableRows from "./HoverableTableRows";
-import StripedRowsTable from "./StripedRowstable";
+import StripedRowsTable from "./StripedRowsTable";
+
 import TableWithFooter from "./TableWithFooter";
 
 const BasicTablesMain = () => {

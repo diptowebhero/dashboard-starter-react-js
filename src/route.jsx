@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Accordion from "./components/BaseUI/Accordion/Accordion";
+import DropdownMain from "./components/BaseUI/Dropdown/DropdownMain";
 import Inputs from "./components/BaseUI/Inputs/Inputs";
 import RadioMain from "./components/BaseUI/Radio/RadioMain";
 import SelectMain from "./components/BaseUI/Select/SelectMain";
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/data-table",
         element: <DataTableMain />,
+      },
+      {
+        path: "/dropdown",
+        element: <DropdownMain />,
       },
       {
         path: "/*",

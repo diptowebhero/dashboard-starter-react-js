@@ -4,7 +4,7 @@ import Inputs from "./components/BaseUI/Inputs/Inputs";
 import RadioMain from "./components/BaseUI/Radio/RadioMain";
 import SelectMain from "./components/BaseUI/Select/SelectMain";
 import BasicTablesMain from "./components/BaseUI/Tables/BasicTable/BasicTablesMain";
-import DataTables from "./components/BaseUI/Tables/DataTable/DataTables";
+import DataTableMain from "./components/BaseUI/Tables/DataTable/DataTableMain";
 import TextArea from "./components/BaseUI/TextArea/TextArea";
 import Home from "./components/Home";
 import NotFoundPage from "./components/NotFoundPage";
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/data-table",
-        element: <DataTables />,
+        element: <DataTableMain />,
       },
       {
         path: "/*",

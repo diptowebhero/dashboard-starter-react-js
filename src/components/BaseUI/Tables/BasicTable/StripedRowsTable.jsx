@@ -1,5 +1,6 @@
 import Box from "../../Box";
 import Title from "../../Title";
+
 const tableData = [
   {
     id: "01",
@@ -48,12 +49,12 @@ const tableData = [
   },
 ];
 
-const BasicTables = () => {
+const StripedRowsTable = () => {
   return (
     <Box>
-      <Title title="Basic Tables" />
+      <Title title="Striped Rows Table" />
 
-      {/* Basic Tables */}
+      {/* Striped Rows Table */}
       <div className="overflow-x-auto">
         <div className="min-w-max">
           <table className="w-full table-auto border-collapse rounded-md border border-slate-300 text-left shadow-md dark:border-slate-700">
@@ -69,10 +70,10 @@ const BasicTables = () => {
               </tr>
             </thead>
             <tbody>
-              {tableData.map((item) => (
+              {tableData.map((item, index) => (
                 <tr
                   key={item.id}
-                  className="border-slate-20 border-b text-slate-700 hover:bg-slate-50 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-700"
+                  className={`border-b border-slate-200 text-slate-700 hover:bg-slate-50 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-700 ${index % 2 === 0 ? "bg-gray-50 dark:bg-slate-900" : "bg-white dark:bg-slate-800"}`}
                 >
                   <td className="px-4 py-2">{item.id}</td>
                   <td className="px-4 py-2">{item.productName}</td>
@@ -91,4 +92,4 @@ const BasicTables = () => {
   );
 };
 
-export default BasicTables;
+export default StripedRowsTable;

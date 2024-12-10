@@ -1,8 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Accordion from "./components/BaseUI/Accordion/Accordion";
 import Inputs from "./components/BaseUI/Inputs/Inputs";
+import RadioMain from "./components/BaseUI/Radio/RadioMain";
 import SelectMain from "./components/BaseUI/Select/SelectMain";
-import BasicTables from "./components/BaseUI/Tables/BasicTable/BasicTables";
+import BasicTablesMain from "./components/BaseUI/Tables/BasicTable/BasicTablesMain";
 import DataTables from "./components/BaseUI/Tables/DataTable/DataTables";
 import TextArea from "./components/BaseUI/TextArea/TextArea";
 import Home from "./components/Home";
@@ -35,8 +36,12 @@ const router = createBrowserRouter([
         element: <SelectMain />,
       },
       {
+        path: "/radio",
+        element: <RadioMain />,
+      },
+      {
         path: "/basic-table",
-        element: <BasicTables />,
+        element: <BasicTablesMain />,
       },
       {
         path: "/data-table",

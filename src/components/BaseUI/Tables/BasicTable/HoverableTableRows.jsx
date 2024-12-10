@@ -1,5 +1,6 @@
 import Box from "../../Box";
 import Title from "../../Title";
+
 const tableData = [
   {
     id: "01",
@@ -48,10 +49,10 @@ const tableData = [
   },
 ];
 
-const BasicTables = () => {
+const HoverableTableRows = () => {
   return (
     <Box>
-      <Title title="Basic Tables" />
+      <Title title="Hoverable Table Rows" />
 
       {/* Basic Tables */}
       <div className="overflow-x-auto">
@@ -72,7 +73,7 @@ const BasicTables = () => {
               {tableData.map((item) => (
                 <tr
                   key={item.id}
-                  className="border-slate-20 border-b text-slate-700 hover:bg-slate-50 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-700"
+                  className="border-b border-slate-200 text-slate-700 transition-all duration-200 ease-in-out hover:bg-slate-100 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-700"
                 >
                   <td className="px-4 py-2">{item.id}</td>
                   <td className="px-4 py-2">{item.productName}</td>
@@ -91,4 +92,4 @@ const BasicTables = () => {
   );
 };
 
-export default BasicTables;
+export default HoverableTableRows;

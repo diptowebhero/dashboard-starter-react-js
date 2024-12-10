@@ -109,6 +109,7 @@ export const menuItems = [
           { name: "Inputs", route: "/inputs" },
           { name: "TextArea", route: "/text-area" },
           { name: "Select", route: "/select" },
+          { name: "Radio", route: "/radio" },
           { name: "Dropdown", route: "/dropdown" },
           { name: "Badge", route: "/badge" },
           { name: "Input Group", route: "/input-group" },

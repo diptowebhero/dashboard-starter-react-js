@@ -3,7 +3,7 @@ import { tableData } from "../../../../data/data";
 import { generatePageNumbers } from "../../../../utils/utils";
 import Box from "../../Box";
 import Title from "../../Title";
-
+const headers = ["Name", "Email", "Phone", "Joining Date", "Status"];
 const BasicDataTables = () => {
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -67,21 +67,14 @@ const BasicDataTables = () => {
               <table className="w-full border-collapse overflow-x-auto border border-gray-200">
                 <thead>
                   <tr className="border-b border-slate-200 text-gray-700 dark:border-slate-800 dark:bg-slate-800 dark:text-gray-300">
-                    <th className="border border-gray-200 px-4 py-2 dark:border-slate-600">
-                      Name
-                    </th>
-                    <th className="border border-gray-200 px-4 py-2 dark:border-slate-600">
-                      Email
-                    </th>
-                    <th className="border border-gray-200 px-4 py-2 dark:border-slate-600">
-                      Phone
-                    </th>
-                    <th className="border border-gray-200 px-4 py-2 dark:border-slate-600">
-                      Joining Date
-                    </th>
-                    <th className="border border-gray-200 px-4 py-2 dark:border-slate-600">
-                      Status
-                    </th>
+                    {headers.map((header, i) => (
+                      <th
+                        key={i}
+                        className="border border-gray-200 px-4 py-2 text-sm font-semibold dark:border-slate-600"
+                      >
+                        {header}
+                      </th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
@@ -113,7 +106,7 @@ const BasicDataTables = () => {
                           {item.phone}
                         </td>
                         <td className="border border-gray-200 px-4 py-2 dark:border-slate-600">
-                          {item.joiningDate}
+                          {item.joining_date}
                         </td>
                         <td className="border border-gray-200 px-4 py-2 dark:border-slate-600">
                           <span

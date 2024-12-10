@@ -1,5 +1,5 @@
-export // Generate page numbers for pagination with ellipsis
-const generatePageNumbers = (totalPages, currentPage) => {
+// Generate page numbers for pagination with ellipsis
+export const generatePageNumbers = (totalPages, currentPage) => {
   const pageNumbers = [];
   const maxVisiblePages = 5;
 
@@ -30,3 +30,7 @@ const generatePageNumbers = (totalPages, currentPage) => {
 
   return pageNumbers;
 };
+
+export function getImgUrl(name) {
+  return new URL(`../assets/images/${name}`, import.meta.url).href;
+}

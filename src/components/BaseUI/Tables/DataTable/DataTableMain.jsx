@@ -1,5 +1,6 @@
 import CommonHeader from "../../../common/CommonHeader";
 import BasicDataTables from "./BasicDataTables";
+import TableWithColumnFilter from "./TableWithColumnFilter";
 
 const DataTableMain = () => {
   return (
@@ -10,6 +11,7 @@ const DataTableMain = () => {
       />
       <div className="space-y-4">
         <BasicDataTables />
+        <TableWithColumnFilter />
       </div>
     </div>
   );

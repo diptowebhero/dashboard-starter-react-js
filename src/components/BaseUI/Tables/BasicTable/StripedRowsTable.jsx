@@ -49,7 +49,7 @@ const tableData = [
   },
 ];
 
-const StripedRowsTable2 = () => {
+const StripedRowsTable = () => {
   return (
     <Box>
       <Title title="Striped Rows Table" />
@@ -92,4 +92,4 @@ const StripedRowsTable2 = () => {
   );
 };
 
-export default StripedRowsTable2;
+export default StripedRowsTable;

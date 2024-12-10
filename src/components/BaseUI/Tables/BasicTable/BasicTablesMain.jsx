@@ -2,7 +2,7 @@ import CommonHeader from "../../../common/CommonHeader";
 import BasicTables from "./BasicTables";
 import BorderedTable from "./BorderedTable";
 import HoverableTableRows from "./HoverableTableRows";
-import StripedRowsTable2 from "./StripedRowsTable2";
+import StripedRowsTable from "./StripedRowsTable";
 
 import TableWithFooter from "./TableWithFooter";
 
@@ -16,7 +16,7 @@ const BasicTablesMain = () => {
       <div className="space-y-4">
         {/* <div className="grid grid-cols-1 gap-3 md:grid-cols-2"> */}
         <BasicTables />
-        <StripedRowsTable2 />
+        <StripedRowsTable />
         <HoverableTableRows />
         <BorderedTable />
         <TableWithFooter />

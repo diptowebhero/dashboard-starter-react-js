@@ -62,7 +62,7 @@ const PopoverNotification = () => {
   );
   return (
     <Box>
-      <Title title="Profile Popover" />
+      <Title title="Notifications" />
       <Popover trigger={trigger} content={content} className="min-w-[8rem]" />
     </Box>
   );

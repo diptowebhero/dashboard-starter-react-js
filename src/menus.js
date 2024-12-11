@@ -110,7 +110,7 @@ export const menuItems = [
           { name: "TextArea", route: "/text-area" },
           { name: "Select", route: "/select" },
           { name: "Radio", route: "/radio" },
-          { name: "Dropdown", route: "/dropdown" },
+          { name: "Dropdown & Popover", route: "/dropdown" },
           { name: "Badge", route: "/badge" },
           { name: "Input Group", route: "/input-group" },
           { name: "Checkbox", route: "/checkbox" },

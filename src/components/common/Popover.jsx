@@ -22,7 +22,7 @@ const Popover = ({ trigger, content, className }) => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className={`absolute left-0 mt-2 w-full rounded-md bg-white shadow-lg dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 ${className}`}
+            className={`absolute left-0 mt-2 w-full overflow-hidden rounded-md bg-white shadow-lg dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 ${className}`}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}

@@ -15,12 +15,38 @@ const PopoverNotification = () => {
 
   const content = (
     <>
-      <div className="flex items-baseline justify-between gap-4 border-b px-3 py-2">
+      <div className="flex items-baseline justify-between gap-4 border-b px-3 py-2 dark:border-slate-600">
         <div className="text-sm font-semibold">Notifications</div>
         <button className="text-xs font-medium hover:underline">
           Mark all as read
         </button>
       </div>
+
+      {/* single notification */}
+      <div className="border-b px-3 py-2 text-sm dark:border-slate-600">
+        <div className="flex items-start space-x-3">
+          <div className="flex-1">
+            <span className="font-bold">John Doe</span> added new task{" "}
+            <span className="font-medium">
+              PR #42: Patient appointment booking
+            </span>
+            <div className="text-xs">5 minutes ago</div>
+          </div>
+        </div>
+      </div>
+      {/* single notification */}
+      <div className="border-b px-3 py-2 text-sm dark:border-slate-600">
+        <div className="flex items-start space-x-3">
+          <div className="flex-1">
+            <span className="font-bold">John Doe</span> added new task{" "}
+            <span className="font-medium">
+              PR #42: Patient appointment booking
+            </span>
+            <div className="text-xs">5 minutes ago</div>
+          </div>
+        </div>
+      </div>
+      {/* single notification */}
       <div className="px-3 py-2 text-sm">
         <div className="flex items-start space-x-3">
           <div className="flex-1">

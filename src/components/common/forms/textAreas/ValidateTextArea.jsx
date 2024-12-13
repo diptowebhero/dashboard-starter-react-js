@@ -1,13 +1,8 @@
-import Box from "../Box";
-import Title from "../Title";
-
 const ValidateTextArea = () => {
   const isInValid = true;
   const isValid = true;
   return (
-    <Box>
-      <Title title="Validated TextArea" />
-
+    <>
       {/* In-Valid Input */}
       <div>
         <textarea
@@ -29,7 +24,7 @@ const ValidateTextArea = () => {
         />
         <span className="text-xs font-medium text-green-500">Goods</span>
       </div>
-    </Box>
+    </>
   );
 };
 

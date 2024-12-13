@@ -1,10 +1,10 @@
 import CommonHeader from "../../common/CommonHeader";
-import BasicInput from "../../common/forms/BasicInput";
-import InputSizes from "../../common/forms/InputSizes";
-import InputWithHelperText from "../../common/forms/InputWithHelperText";
-import InputWithLabel from "../../common/forms/InputWithLabel";
-import PasswordInput from "../../common/forms/PasswordInput";
-import ValidateInput from "../../common/forms/ValidateInput";
+import BasicInput from "../../common/forms/inputs/BasicInput";
+import InputSizes from "../../common/forms/inputs/InputSizes";
+import InputWithHelperText from "../../common/forms/inputs/InputWithHelperText";
+import InputWithLabel from "../../common/forms/inputs/InputWithLabel";
+import PasswordInput from "../../common/forms/inputs/PasswordInput";
+import ValidateInput from "../../common/forms/inputs/ValidateInput";
 import Box from "../Box";
 import Title from "../Title";
 

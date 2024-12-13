@@ -1,11 +1,10 @@
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
-import Box from "../../BaseUI/Box";
 
 const PasswordInput = () => {
   const [isVisible, setIsVisible] = useState(false);
   return (
-    <Box>
+    <>
       {/* Password */}
       <div>
         <label
@@ -29,7 +28,7 @@ const PasswordInput = () => {
           </div>
         </div>
       </div>
-    </Box>
+    </>
   );
 };
 

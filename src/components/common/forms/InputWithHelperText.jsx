@@ -1,11 +1,6 @@
-import Box from "../Box";
-import Title from "../Title";
-
 const InputWithHelperText = () => {
   return (
-    <Box>
-      <Title title="Input With Helper Text" />
-
+    <>
       {/* Input With Helper Text*/}
       <div>
         <input
@@ -17,7 +12,7 @@ const InputWithHelperText = () => {
           The email must be a valid email address
         </span>
       </div>
-    </Box>
+    </>
   );
 };
 

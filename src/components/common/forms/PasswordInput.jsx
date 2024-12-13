@@ -1,14 +1,11 @@
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
-import Box from "../Box";
-import Title from "../Title";
+import Box from "../../BaseUI/Box";
 
 const PasswordInput = () => {
   const [isVisible, setIsVisible] = useState(false);
   return (
     <Box>
-      <Title title="Password Show/Hide" />
-
       {/* Password */}
       <div>
         <label

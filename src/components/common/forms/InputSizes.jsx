@@ -1,11 +1,6 @@
-import Box from "../Box";
-import Title from "../Title";
-
 const InputSizes = () => {
   return (
-    <Box>
-      <Title title="Input Sizes" />
-
+    <>
       {/*  Input sm*/}
       <div>
         <input
@@ -30,7 +25,7 @@ const InputSizes = () => {
           placeholder="Email"
         />
       </div>
-    </Box>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Accordion from "./components/BaseUI/Accordion/Accordion";
+import AlertMain from "./components/BaseUI/Alert/AlertMain";
 import DropdownMain from "./components/BaseUI/Dropdown/DropdownMain";
 import Inputs from "./components/BaseUI/Inputs/Inputs";
 import RadioMain from "./components/BaseUI/Radio/RadioMain";
@@ -8,8 +9,9 @@ import BasicTablesMain from "./components/BaseUI/Tables/BasicTable/BasicTablesMa
 import DataTableMain from "./components/BaseUI/Tables/DataTable/DataTableMain";
 import TextArea from "./components/BaseUI/TextArea/TextArea";
 import Home from "./components/Home";
-import NotFoundPage from "./components/NotFoundPage";
 import DashboardLayout from "./layouts/DashboardLayout";
+import NotFoundPage from "./pages/NotFoundPage";
+import ServerError from "./pages/ServerError";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +53,18 @@ const router = createBrowserRouter([
       {
         path: "/dropdown",
         element: <DropdownMain />,
+      },
+      {
+        path: "/alert",
+        element: <AlertMain />,
+      },
+      {
+        path: "/error-page/404-error",
+        element: <NotFoundPage />,
+      },
+      {
+        path: "/error-page/505-error",
+        element: <ServerError />,
       },
       {
         path: "/*",

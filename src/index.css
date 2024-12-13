@@ -210,7 +210,7 @@
     @apply mx-auto flex h-[calc(100vh_-_120px)] w-full max-w-[960px] flex-col justify-center px-4 py-20;
   }
   .not-found-main .content svg {
-    @apply absolute inset-x-0 top-[28px] z-0 text-[200px] opacity-50 md:top-[-74px];
+    @apply absolute inset-x-0 top-[28px] z-0 text-[200px] font-extrabold opacity-50 md:top-[-74px];
   }
 }
 

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
@@ -22,6 +23,11 @@ export default {
           light: "#00a76f",
           lighter: "#5be49b",
         },
+        secondary: colors.gray,
+        success: colors.emerald,
+        warning: colors.amber,
+        danger: colors.rose,
+        info: colors.indigo,
       },
     },
   },

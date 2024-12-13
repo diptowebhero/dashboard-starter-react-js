@@ -1,12 +1,8 @@
-import Box from "../Box";
-import Title from "../Title";
-
 const ValidatedSelect = () => {
   const isValid = true;
   const isInValid = true;
   return (
-    <Box>
-      <Title title="Validated Select" />
+    <>
       <div className="space-y-4">
         {/* valid select */}
         <select
@@ -36,7 +32,7 @@ const ValidatedSelect = () => {
           This field is required!
         </span>
       </div>
-    </Box>
+    </>
   );
 };
 

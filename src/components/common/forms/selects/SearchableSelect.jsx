@@ -1,7 +1,5 @@
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
-import Box from "../Box";
-import Title from "../Title";
 
 const SearchableSelect = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -14,8 +12,7 @@ const SearchableSelect = () => {
   );
 
   return (
-    <Box>
-      <Title title="Searchable Custom Select" />
+    <>
       <div className="relative w-full">
         {/* Selected value box */}
         <div
@@ -66,7 +63,7 @@ const SearchableSelect = () => {
           </div>
         )}
       </div>
-    </Box>
+    </>
   );
 };
 

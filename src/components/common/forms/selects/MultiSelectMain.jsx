@@ -1,7 +1,5 @@
 import { useState } from "react";
-import MultiSelect from "../../common/MultiSelect";
-import Box from "../Box";
-import Title from "../Title";
+import MultiSelect from "../../MultiSelect";
 
 const MultiSelectMain = () => {
   const [selectedFruits, setSelectedFruits] = useState([]);
@@ -15,8 +13,7 @@ const MultiSelectMain = () => {
     setSelectedFruits(selectedFruits.filter((item) => item !== fruit));
   };
   return (
-    <Box>
-      <Title title="Custom Multi Select" />
+    <>
       <MultiSelect
         options={fruits}
         selectedOptions={selectedFruits}
@@ -25,7 +22,7 @@ const MultiSelectMain = () => {
         placeholder="Select fruits"
         searchPlaceholder="Search fruits"
       />
-    </Box>
+    </>
   );
 };
 

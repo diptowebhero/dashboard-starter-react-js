@@ -2,6 +2,7 @@ import ButtonSizes from "../../common/buttons/ButtonSizes";
 import ButtonWithIcon from "../../common/buttons/ButtonWithIcon";
 import DefaultButtons from "../../common/buttons/DefaultButtons";
 import SocialMediaButtons from "../../common/buttons/SocialMediaButtons";
+import SocialMediaButtonsWithText from "../../common/buttons/SocialMediaButtonsWithText";
 import CommonHeader from "../../common/CommonHeader";
 import Box from "./../Box";
 import Title from "./../Title";
@@ -30,6 +31,10 @@ const ButtonMain = () => {
         <Box>
           <Title title="Social media icons" />
           <SocialMediaButtons />
+        </Box>
+        <Box>
+          <Title title="Social media icons with text" />
+          <SocialMediaButtonsWithText />
         </Box>
       </div>
     </>

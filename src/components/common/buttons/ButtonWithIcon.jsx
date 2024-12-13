@@ -2,7 +2,7 @@ import { CheckCircle, DeleteIcon, Edit, Home, UserPlus } from "lucide-react";
 
 const ButtonWithIcon = () => {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex flex-wrap items-center gap-3">
       {/* btn-primary */}
       <button className="flex transform cursor-pointer items-center justify-center gap-x-1 rounded-md bg-primary/80 px-6 py-2 text-sm text-white transition-all duration-150 ease-in-out hover:scale-105 hover:bg-primary/70 focus:outline-none">
         <CheckCircle className="size-5" />

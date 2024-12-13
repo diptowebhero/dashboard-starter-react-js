@@ -1,6 +1,6 @@
 const ButtonSizes = () => {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex flex-wrap items-center gap-3">
       {/* btn-primary xs*/}
       <button className="inline transform cursor-pointer items-center justify-center gap-2 rounded-md bg-primary/80 px-6 py-1 text-xs text-white transition-all duration-150 ease-in-out hover:scale-105 hover:bg-primary/70 focus:outline-none">
         Primary

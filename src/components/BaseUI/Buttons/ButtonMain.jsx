@@ -1,6 +1,7 @@
 import ButtonSizes from "../../common/buttons/ButtonSizes";
 import ButtonWithIcon from "../../common/buttons/ButtonWithIcon";
 import DefaultButtons from "../../common/buttons/DefaultButtons";
+import SocialMediaButtons from "../../common/buttons/SocialMediaButtons";
 import CommonHeader from "../../common/CommonHeader";
 import Box from "./../Box";
 import Title from "./../Title";
@@ -25,6 +26,10 @@ const ButtonMain = () => {
         <Box>
           <Title title="Button with icon" />
           <ButtonWithIcon />
+        </Box>
+        <Box>
+          <Title title="Social media icons" />
+          <SocialMediaButtons />
         </Box>
       </div>
     </>

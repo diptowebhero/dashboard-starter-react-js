@@ -3,6 +3,7 @@ import CommonHeader from "../../common/CommonHeader";
 import Box from "../Box";
 import Title from "../Title";
 import AlertWithIcon from "./../../common/alert/AlertWithIcon";
+import ControlledAlert from "./../../common/alert/ControlledAlert";
 
 const AlertMain = () => {
   return (
@@ -20,6 +21,10 @@ const AlertMain = () => {
           <Box>
             <Title title="Alert with icon" />
             <AlertWithIcon />
+          </Box>
+          <Box>
+            <Title title="Controlled Alert" />
+            <ControlledAlert />
           </Box>
         </div>
       </div>

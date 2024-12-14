@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Accordion from "./components/BaseUI/Accordion/Accordion";
 import AlertMain from "./components/BaseUI/Alert/AlertMain";
 import ButtonMain from "./components/BaseUI/Buttons/ButtonMain";
+import { CheckboxMain } from "./components/BaseUI/Checkbox/CheckboxMain";
 import DropdownMain from "./components/BaseUI/Dropdown/DropdownMain";
 import Inputs from "./components/BaseUI/Inputs/Inputs";
 import RadioMain from "./components/BaseUI/Radio/RadioMain";
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: "/buttons",
         element: <ButtonMain />,
+      },
+      {
+        path: "/checkbox",
+        element: <CheckboxMain />,
       },
       {
         path: "/error-page/404-error",

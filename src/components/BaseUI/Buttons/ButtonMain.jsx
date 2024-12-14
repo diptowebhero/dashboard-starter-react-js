@@ -3,6 +3,7 @@ import ButtonWithIcon from "../../common/buttons/ButtonWithIcon";
 import SocialMediaButtons from "../../common/buttons/SocialMediaButtons";
 import SocialMediaButtonsWithText from "../../common/buttons/SocialMediaButtonsWithText";
 import CommonHeader from "../../common/CommonHeader";
+import DefaultButtons from "./../../common/buttons/DefaultButtons";
 import Box from "./../Box";
 import Title from "./../Title";
 
@@ -15,10 +16,10 @@ const ButtonMain = () => {
       />
 
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-        {/* <Box>
+        <Box>
           <Title title="Default Buttons" />
           <DefaultButtons />
-        </Box> */}
+        </Box>
         <Box>
           <Title title="Button Sizes" />
           <ButtonSizes />
